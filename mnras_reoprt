@@ -144,11 +144,21 @@ as a numbered equation:
 \end{equation}
 
 Refer back to them as e.g. equation~(\ref{eq:quadratic}).
+\subsubsection{Hard sums}
+Here we will attempt some difficult mathematics including:
+
+\begin{enumerate}
+\item vector calculus
+\item partial differential equations
+\item Taylor expansions
+\item times tables
+\item one-two, miss a few, 99...100!
+
+\end{enumerate}
 
 \subsection{Figures and tables}
 
-Figures and tables should be placed at logical positions in the text. Don't
-worry about the exact layout, which will be handled by the publishers.
+Figures and tables should be placed at logical positions in the text. Don't worry about the exact layout, which will be handled by the publishers.
 
 Figures are referred to as e.g. Fig.~\ref{fig:example_figure}, and tables as
 e.g. Table~\ref{tab:example_table}.
@@ -192,6 +202,7 @@ Many interesting results were obtained as reported in Table \ref{tab:resultstabl
 
 % \begin{verbatim}
 \begin{table}
+ \centering
  \caption{Stellar masses and luminosities.}
   \label{tab:resultstable}
  \begin{tabular}{lcc}
