@@ -231,25 +231,28 @@ Figure \ref{fig:CMD1_figure} shows the $u-g$ colour plotted against $M_g$ magnit
 	% or pdf, png, jpg if compiling using pdflatex
 	\includegraphics[width=\columnwidth]{galaxyCMD}
 %	\includegraphics[width=6 cm]{galaxyCMD}
-    \caption{Galaxy colour-magnitude diagram: $u-g$ colour index versus $M_g$ magnitude.}
+    \caption{Galaxy colour-magnitude diagram: $u-g$ colour index versus $M_g$ magnitude. The bimodality of the distribution is discussed in the text.}
     \label{fig:CMD1_figure}
 \end{figure}
 
-%%%%%%%%%%%%% Conclusions %%%%%%%%%%%
+
+%%%%%%%%%%%%% Further work %%%%%%%%%%%%%%%%%%%%%%
+\section{Further work}
+Based on the inconclusive results reported in Table \ref{tab:resultstable}, together with the very poor conclusions arrived at in Section \ref{sec:conclusions}, we need to do lots more work.
+
+%%%%%%%%%%%%% Conclusions %%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:conclusions}
 
 The last numbered section should briefly summarise what has been done, and describe the final conclusions which the authors draw from their work.
 
-\section{Further work}
-Based on the inconclusive results reported in Table \ref{tab:resultstable}, together with the very poor conclusions arrived at in Section \ref{sec:conclusions}, we need to do lots more work.
 
+
+%%%%%%%%%%%%%%%%%% Acknowledgements %%%%%%%%%%%%%%
 \section*{Acknowledgements}
 
 The Acknowledgements section is not numbered. Here you can thank helpful
-colleagues, acknowledge funding agencies, telescopes and facilities used etc.
-Try to keep it short.
-
+colleagues, acknowledge funding agencies, telescopes and facilities used etc. Try to keep it short.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
@@ -259,17 +262,6 @@ Try to keep it short.
 \bibliographystyle{mnras}
 %\bibliography{example} % if your bibtex file is called example.bib
 \bibliography{jpnewbib1,JPbib2019} 
-
-
-
-% Alternatively you could enter them by hand, like this:
-% This method is tedious and prone to error if you have lots of references
-%\begin{thebibliography}{99}
-%\bibitem[\protect\citeauthoryear{Author}{2012}]{Author2012}
-%Author A.~N., 2013, Journal of Improbable Astronomy, 1, 1
-%\bibitem[\protect\citeauthoryear{Others}{2013}]{Others2013}
-%Others S., 2012, Journal of Interesting Stuff, 17, 198
-%\end{thebibliography}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
