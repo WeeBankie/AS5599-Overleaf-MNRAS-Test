@@ -55,24 +55,27 @@
 
 % Please keep new commands to a minimum, and use \newcommand not \def to avoid
 % overwriting existing commands. Example:
-\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\fluxdensity}{\,W m$^{-2}$}	% watts per square meter.
+\newcommand{\Mpc}{\,Mpc}	% Mega parsecs.
+\newcommand{\Lsun}{\,$L_{\sun}$}	% Solar luminosity.
+\newcommand{\Msun}{\,$M_{\sun}$}	% Solar mass.
+\newcommand{\kms}{\,km s$^{-1}$}	% kilometres per second.
+\newcommand{\ms}{\,m s$^{-1}$}	    % metres per second.
 
 %%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
 % \title[Short title, max. 45 characters]{MNRAS \LaTeXe\ Quasars as standard candles}
-\title[Short title, max. 45 characters]{Quasars as standard candles}
+\title[Quasars as standard candles]{Calibrating and using quasars as standard candles} %[short title]{long title}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
 \author[J. Proctor]{John Proctor$^{1,2}$\thanks{E-mail: jp210@st-andrews.ac.uk}
 \\
 % List of institutions
-$^{1}$Royal Astronomical Society, Burlington House, Piccadilly, London W1J 0BQ, UK\\
-$^{2}$Department of Physics \& Astronomy, University of St. Andrews, North Haugh, St. Andrews, Fife, U.K.\\
+$^{1}$School of Physics and Astronomy, University of St Andrews, North Haugh, St Andrews KY16 9SS, UK\\
+$^{2}$Royal Astronomical Society, Burlington House, Piccadilly, London W1J 0BQ, UK\\
 }
 
 % These dates will be filled out by the publisher
@@ -86,6 +89,8 @@ $^{2}$Department of Physics \& Astronomy, University of St. Andrews, North Haugh
 \label{firstpage}
 \pagerange{\pageref{firstpage}--\pageref{lastpage}}
 \maketitle
+
+%%%%%%%%%%%%%%%%% ABSTRACT %%%%%%%%%%%%%%%%%%
 
 % Abstract of the paper
 \begin{abstract}
@@ -193,8 +198,14 @@ e.g. Table~\ref{tab:example_table}.
 
 %%%%%%%%%%%%%%%% RESULTS TABLE %%%%%%%%%%%%%%%%%%
 
-I have calculated a flux of 2.567 \pcm.
+I have calculated a flux of 2.567 \fluxdensity.
+
+The Sombrero galaxy lies at a distance of 10 \Mpc. It has a luminosity of about $10^{11}$ \Lsun, therefore having a mass of around $10^{11}$ \Msun.
+
+
 Many other interesting results were obtained as reported in Table \ref{tab:resultstable}.
+
+An additional finding was that the speed of light was determined to be approximately $c=3.10^8$ \ms.
 
 
 % \begin{verbatim}
