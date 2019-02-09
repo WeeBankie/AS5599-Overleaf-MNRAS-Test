@@ -55,7 +55,7 @@
 
 % Please keep new commands to a minimum, and use \newcommand not \def to avoid
 % overwriting existing commands. Example:
-%\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
+\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -63,7 +63,8 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[Short title, max. 45 characters]{MNRAS \LaTeXe\ Quasars as standard candles}
+% \title[Short title, max. 45 characters]{MNRAS \LaTeXe\ Quasars as standard candles}
+\title[Short title, max. 45 characters]{Quasars as standard candles}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -192,7 +193,8 @@ e.g. Table~\ref{tab:example_table}.
 
 %%%%%%%%%%%%%%%% RESULTS TABLE %%%%%%%%%%%%%%%%%%
 
-Many interesting results were obtained as reported in Table \ref{tab:resultstable}:
+I have calculated a flux of 2.567 \pcm.
+Many other interesting results were obtained as reported in Table \ref{tab:resultstable}.
 
 
 % \begin{verbatim}
