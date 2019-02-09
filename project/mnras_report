@@ -258,7 +258,7 @@ Try to keep it short.
 
 \bibliographystyle{mnras}
 %\bibliography{example} % if your bibtex file is called example.bib
-\bibliography{jpnewbib1,JPbib2018} 
+\bibliography{jpnewbib1,JPbib2019} 
 
 
 
