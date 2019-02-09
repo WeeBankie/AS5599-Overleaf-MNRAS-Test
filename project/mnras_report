@@ -102,8 +102,6 @@ Maybe this paper will be accepted!
 keyword1 beauty -- keyword2 charm -- keyword3 garbage
 \end{keywords}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%   TOC   %%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,15 +114,12 @@ keyword1 beauty -- keyword2 charm -- keyword3 garbage
 %\newpage % [JP] remove the comment to remove the column break. 
 
 \section{Introduction}
-
 This is a simple template for authors to write new MNRAS papers.
 See \texttt{mnras\_sample.tex} for a more complex example, and \texttt{mnras\_guide.tex}
-for a full user guide.
-
-All papers should start with an Introduction section, which sets the work
-in context, cites relevant earlier studies in the field and describes the problem the authors aim to solve.
+for a full user guide. All papers should start with an Introduction section, which sets the work in context, cites relevant earlier studies in the field and describes the problem the authors aim to solve.
 
 We would also like to mention the good work done by Einstein \citep{Einstein} and Dirac \citep{Dirac}. Recent research into dark energy has been performed using HST observations \citep{suzuki2012hubble}. An interesting piece on the determination of H0 from Cepheids is provided by \citet{2006ApJ...652.1133M}.
+
 There are a thousand researchers working on BBH mergers \citep{PhysRevLett.119.141101} at LIGO.
 
 Regarding the possibility of using quasars as standard candles \citet{2018arXiv181102590R} suggest that supernovae data may mislead the conclusion that the expansion of the universe is presently accelerating.
@@ -219,7 +214,7 @@ Many interesting results were obtained as reported in Table \ref{tab:resultstabl
 
 \section{Galaxy CMDs}
 \label{sec:CMDs}
-Here are a couple of plots of galaxy colour-magnitude diagrams (CMD) showing the bimodal distribution between the 'blue cloud' and 'red sequence regions of the galaxy CMD.
+Here are a couple of plots of galaxy colour-magnitude diagrams (CMD) showing the bimodal distribution between the 'blue cloud' and 'red sequence' regions of the galaxy CMD.
 We will need to use the 'here' command to enforce placement or maybe use 'placeins' to constrain the plot within the parent section.
 
 Figure \ref{fig:CMD1_figure} shows the $u-g$ colour plotted against $M_g$ magnitude for 20,000 nearby galaxies ($z < 0.04$).
@@ -235,35 +230,25 @@ Figure \ref{fig:CMD1_figure} shows the $u-g$ colour plotted against $M_g$ magnit
     \label{fig:CMD1_figure}
 \end{figure}
 
+An interesting treatment of galaxy CMDs is described in \citet{2012MNRAS.419.1727C}. This document is published by MNRAS and so is a good reference for proper formatting.
+A lot of stars are included in the catalogue by \citet{hog2000tycho}.
 
-%%%%%%%%%%%%% Further work %%%%%%%%%%%%%%%%%%%%%%
 \section{Further work}
 Based on the inconclusive results reported in Table \ref{tab:resultstable}, together with the very poor conclusions arrived at in Section \ref{sec:conclusions}, we need to do lots more work.
-
-%%%%%%%%%%%%% Conclusions %%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:conclusions}
-
 The last numbered section should briefly summarise what has been done, and describe the final conclusions which the authors draw from their work.
-
-
-
-%%%%%%%%%%%%%%%%%% Acknowledgements %%%%%%%%%%%%%%
 \section*{Acknowledgements}
 
 The Acknowledgements section is not numbered. Here you can thank helpful
 colleagues, acknowledge funding agencies, telescopes and facilities used etc. Try to keep it short.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
-
 % The best way to enter references is to use BibTeX:
-
 \bibliographystyle{mnras}
 %\bibliography{example} % if your bibtex file is called example.bib
 \bibliography{jpnewbib1,JPbib2019} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
 
