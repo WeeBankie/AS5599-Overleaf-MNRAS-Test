@@ -44,7 +44,7 @@
 
 % Only include extra packages if you really need them. Common packages are:
 \usepackage{graphicx}	% Including figure files
-\graphicspath{ {./images/} }   % [added by JP]
+\graphicspath{ {../images/} }   % [added by JP - home, then down 1 level]
 
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
@@ -220,16 +220,17 @@ Many interesting results were obtained as reported in Table \ref{tab:resultstabl
 \section{Galaxy CMDs}
 \label{sec:CMDs}
 Here are a couple of plots of galaxy colour-magnitude diagrams (CMD) showing the bimodal distribution between the 'blue cloud' and 'red sequence regions of the galaxy CMD.
-We will need to use the 'here' command to enforce placement or mayve use 'placeins' to constrain the plot within the parent section.
+We will need to use the 'here' command to enforce placement or maybe use 'placeins' to constrain the plot within the parent section.
 
 Figure \ref{fig:CMD1_figure} shows the $u-g$ colour plotted against $M_g$ magnitude for 20,000 nearby galaxies ($z < 0.04$).
 
 % CMD figures
-\begin{figure}
+\begin{figure} %{h}
 	% To include a figure from a file named example.*
 	% Allowable file formats are eps or ps if compiling using latex
 	% or pdf, png, jpg if compiling using pdflatex
 	\includegraphics[width=\columnwidth]{galaxyCMD}
+%	\includegraphics[width=6 cm]{galaxyCMD}
     \caption{Galaxy colour-magnitude diagram: $u-g$ colour index versus $M_g$ magnitude.}
     \label{fig:CMD1_figure}
 \end{figure}
@@ -257,8 +258,8 @@ Try to keep it short.
 
 \bibliographystyle{mnras}
 %\bibliography{example} % if your bibtex file is called example.bib
-\bibliography{jpnewbib1,JPbib2018} % if your bibtex file is called example.bib
-%\bibliography{JPbib2018} % if your bibtex file is called example.bib
+\bibliography{jpnewbib1,JPbib2018} 
+
 
 
 % Alternatively you could enter them by hand, like this:
