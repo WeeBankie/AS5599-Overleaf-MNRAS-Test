@@ -234,6 +234,7 @@ We will need to use the 'here' command to enforce placement or maybe use 'placei
 Figure \ref{fig:CMD1_figure} shows the $u-g$ colour plotted against $M_g$ magnitude for 20,000 nearby galaxies ($z < 0.04$).
 
 % CMD figures
+% \columnbreak
 \begin{figure} %{h}
 	% To include a figure from a file named example.*
 	% Allowable file formats are eps or ps if compiling using latex
