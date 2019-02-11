@@ -193,10 +193,18 @@ e.g. Table~\ref{tab:example_table}.
 	\end{tabular}
 \end{table}
 
+%=================== ANALYSIS ==============
+
+\section{Analysis}
+\label{sec:analysis}
+
+A Bayesian analysis and model fit was performed on the data according to Section ZZ of \citet{hilbe_de-souza_ishida_2017}.
+
+
+%%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%
 \section{Results}
 \label{sec:results}
 
-%%%%%%%%%%%%%%%% RESULTS TABLE %%%%%%%%%%%%%%%%%%
 
 I have calculated a flux of 2.567 \fluxdensity.
 
