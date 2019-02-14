@@ -119,6 +119,8 @@ keyword1 beauty -- keyword2 charm -- keyword3 garbage
 \endgroup
 %\newpage % [JP] remove the comment to remove the column break. 
 
+%-------------- INTRODUCTION -------------------------------------
+
 \section{Introduction}
 This is a simple template for authors to write new MNRAS papers.
 See \texttt{mnras\_sample.tex} for a more complex example, and \texttt{mnras\_guide.tex}
@@ -129,6 +131,8 @@ We would also like to mention the good work done by Einstein \citep{Einstein} an
 There are a thousand researchers working on BBH mergers \citep{PhysRevLett.119.141101} at LIGO.
 
 Regarding the possibility of using quasars as standard candles \citet{2018arXiv181102590R} suggest that supernovae data may mislead the conclusion that the expansion of the universe is presently accelerating.
+
+An overview of the SDSS ManGA project is provided by \citet{Bundy_2014}. A concise description of the \href{https://iopscience.iop.org/article/10.1088/0004-637X/798/1/7/meta#apj504473s3}{survey design} is included in Section 3.
 
 We have now setup synchronising with GitHub and are testing to see that this works OK.
 
@@ -198,7 +202,7 @@ e.g. Table~\ref{tab:example_table}.
 \section{Analysis}
 \label{sec:analysis}
 
-A Bayesian analysis and model fit was performed on the data according to Section ZZ of \citet{hilbe_de-souza_ishida_2017}.
+A Bayesian analysis and model fit was performed on the data according to Section ZZ of \citet{hilbe_de-souza_ishida_2017}. Usefull Python code and visualisation examples can be found in \citet{2014sdmm.book.....I}.
 
 
 %%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%
