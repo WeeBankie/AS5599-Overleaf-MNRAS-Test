@@ -23,7 +23,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Basic setup. Most papers should leave these options alone.
-\documentclass[fleqn,usenatbib]{mnras}
+\documentclass[ceqn,usenatbib]{mnras}
+% fleqn aligns equations to the left.
+% to centre align replace fleqn with ceqn.
+
 
 % MNRAS is set in Times font. If you don't have this installed (most LaTeX
 % installations will be fine) or prefer the old Computer Modern fonts, comment
@@ -119,7 +122,7 @@ keyword1 beauty -- keyword2 charm -- keyword3 garbage
 \endgroup
 %\newpage % [JP] remove the comment to remove the column break. 
 
-%-------------- INTRODUCTION -------------------------------------
+%-------------- INTRODUCTION -----------------------------
 
 \section{Introduction}
 This is a simple template for authors to write new MNRAS papers.
@@ -132,7 +135,9 @@ There are a thousand researchers working on BBH mergers \citep{PhysRevLett.119.1
 
 Regarding the possibility of using quasars as standard candles \citet{2018arXiv181102590R} suggest that supernovae data may mislead the conclusion that the expansion of the universe is presently accelerating.
 
-An overview of the SDSS ManGA project is provided by \citet{Bundy_2014}. A concise description of the \href{https://iopscience.iop.org/article/10.1088/0004-637X/798/1/7/meta#apj504473s3}{survey design} is included in Section 3.
+An overview of the SDSS MaNGA project is provided by \citet{Bundy_2014}. A concise description of the \href{https://iopscience.iop.org/article/10.1088/0004-637X/798/1/7/meta#apj504473s3}{survey design} is included in Section 3. \citet{2008MNRAS.388.1321P} have analysed the distribution of galaxy shapes in the SDSS DR6. The shapes of high-redshift galaxies has been investigated by \citet{2012ApJ...754L..24C}.
+
+Reverberation mapping of active galactic nuclei is discussed in \citet{2017ApJ...840...97F}.
 
 We have now setup synchronising with GitHub and are testing to see that this works OK.
 
@@ -148,37 +153,30 @@ as a numbered equation:
         x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
     	\label{eq:quadratic}
     \end{equation}
-Refer back to them as e.g. equation~(\ref{eq:quadratic}).
+Refer back to them as e.g. equation~(\ref{eq:quadratic}). 
+
+Note that this equation can appear centred using 
+\verb'ceqn' or left-aligned using \verb'fleqn' in the \verb'\documentclass[]{}' statement.
+
 \subsubsection{Hard sums}
 Here we will attempt some difficult mathematics including:
 
 \begin{enumerate}
-\item vector calculus
-\item partial differential equations
+\item Vector calculus
+\item Partial differential equations
 \item Taylor expansions
-\item times tables
-\item one-two, miss a few, 99...100!
-
+\item Times tables
+\item One-two, miss a few.., 99, 100!
 \end{enumerate}
 \[\]
+
 \subsection{Figures and tables}
 
 Figures and tables should be placed at logical positions in the text. Don't worry about the\textbf{ exact layout}, which will be handled by the publishers.
 
-Figures are referred to as e.g. Fig.~\ref{fig:example_figure}, and tables as
+Figures are referred to as e.g. Fig.~\ref{fig:CMD1_figure}, and tables as
 e.g. Table~\ref{tab:example_table}.
 
-% Example figure
-\begin{figure}
-	% To include a figure from a file named example.*
-	% Allowable file formats are eps or ps if compiling using latex
-	% or pdf, png, jpg if compiling using pdflatex
-	\includegraphics[width=\columnwidth]{example}
-    \caption{This is an example figure. Captions appear below each figure.
-	Give enough detail for the reader to understand what they're looking at,
-	but leave detailed discussion to the main body of the text.}
-    \label{fig:example_figure}
-\end{figure}
 
 % Example table
 \begin{table}
@@ -196,6 +194,13 @@ e.g. Table~\ref{tab:example_table}.
 		\hline
 	\end{tabular}
 \end{table}
+
+%======== Jeans Dynamical Modelling =========
+
+\section{Jeans dynamical modelling}
+\label{sec:Jeans}
+
+Dynamical modelling of galaxies can be performed using the Jeans \citep{Cappellari2008} or Schwarzschild modelling methods.
 
 %=================== ANALYSIS ==============
 
@@ -246,22 +251,71 @@ We will need to use the 'here' command to enforce placement or maybe use 'placei
 Figure \ref{fig:CMD1_figure} shows the $u-g$ colour plotted against $M_g$ magnitude for 20,000 nearby galaxies ($z < 0.04$).
 
 % CMD figures
-% \columnbreak
 \begin{figure} %{h}
 	% To include a figure from a file named example.*
 	% Allowable file formats are eps or ps if compiling using latex
 	% or pdf, png, jpg if compiling using pdflatex
-	\includegraphics[width=\columnwidth]{galaxyCMD}
-%	\includegraphics[width=6 cm]{galaxyCMD}
-    \caption{Galaxy colour-magnitude diagram: $u-g$ colour index versus $M_g$ magnitude. The bimodality of the distribution is discussed in the text.}
-    \label{fig:CMD1_figure}
+	\includegraphics[width=\columnwidth]{galaxyCMD2}
+    \caption{Galaxy colour-magnitude diagram: $u-r$ colour index versus $M_r$ magnitude. The bimodality of the distribution is discussed in the text.}
+    \label{fig:CMD2_figure}
 \end{figure}
 
 An interesting treatment of galaxy CMDs is described in \citet{2012MNRAS.419.1727C}. This document is published by MNRAS and so is a good reference for proper formatting.
 A lot of stars are included in the catalogue by \citet{hog2000tycho}.
 
+\begin{figure}
+	% To include a figure from a file named example.*
+	% Allowable file formats are eps or ps if compiling using latex
+	% or pdf, png, jpg if compiling using pdflatex
+	\includegraphics[width=\columnwidth]{galaxyCMD}
+    \caption{Galaxy colour-magnitude diagram: $u-g$ colour index versus $M_g$ magnitude. The bimodality of the distribution is discussed in the text.}
+    \label{fig:CMD1_figure}
+\end{figure}
+
+\section{Post-starburst Galaxies (PSB)}
+Vivienne has been involved in the preparation of a paper \citep{017MNRAS.472.1401A} regarding the relationship between quenching of star formation and morphological transition.
+
 \section{Further work}
-Based on the inconclusive results reported in Table \ref{tab:resultstable}, together with the very poor conclusions arrived at in Section \ref{sec:conclusions}, we need to do lots more work.
+Based on the inconclusive results reported in Table \ref{tab:resultstable}, together with the very poor conclusions arrived at in Section \ref{sec:conclusions}, we need to do lots more work. One facet is the ability to cut and paste running text from other sources, e.g. MS Word, which should be straightforward.
+In particular we need a full-width table: here is an example.
+
+\defcitealias{smith2014}{Paper~I}
+
+\begin{table*}
+ \caption{Common citation commands, provided by the \texttt{natbib} package.}
+ \label{tab:natbib}
+ \begin{tabular}{lll}
+  \hline
+  Command & Output & Note\\
+  \hline
+  \verb'\citet{key}' & \citet{smith2014} & \\
+  \verb'\citep{key}' & \citep{smith2014} & \\
+  \verb'\citep{key,key2}' & \citep{smith2014,jones2015} & Multiple papers\\
+  \verb'\citet[table 4]{key}' & \citet[table 4]{smith2014} & \\
+  \verb'\citep[see][figure 7]{key}' & \citep[see][figure 7]{smith2014} & \\
+  \verb'\citealt{key}' & \citealt{smith2014} & For use with manual brackets\\
+  \verb'\citeauthor{key}' & \citeauthor{smith2014} & If already cited in close proximity\\
+  \verb'\defcitealias{key}{Paper~I}' &  & Define an alias (doesn't work in floats)\\
+  \verb'\citetalias{key}' & \citetalias{smith2014} & \\
+  \verb'\citepalias{key}' & \citepalias{smith2014} & \\
+  \hline
+ \end{tabular}
+\end{table*}
+
+Well, that was easy: it appears that the following construct does the trick...
+
+\begin{table*}
+ \caption{Common citation commands, provided by the  \texttt{natbib} package.}
+ \begin{tabular}{lll}
+ \hline
+ Subject & Verb & Object \\
+ \hline
+    I & wandered & lonely as a cloud \\
+ \hline
+ \end{tabular}
+\end{table*}
+
+
 \section{Conclusions}
 \label{sec:conclusions}
 The last numbered section should briefly summarise what has been done, and describe the final conclusions which the authors draw from their work.
@@ -275,6 +329,17 @@ colleagues, acknowledge funding agencies, telescopes and facilities used etc. Tr
 \bibliographystyle{mnras}
 %\bibliography{example} % if your bibtex file is called example.bib
 \bibliography{jpnewbib1,JPbib2019} 
+
+% Alternatively you could enter them by hand, like this:
+\begin{thebibliography}{99}
+\bibitem[\protect\citeauthoryear{Author}{2013}]{author2013}
+Author A.~N., 2013, Journal of Improbable Astronomy, 1, 1
+\bibitem[\protect\citeauthoryear{Jones}{2015}]{jones2015}
+Jones C.~D., 2015, Journal of Interesting Stuff, 17, 198
+\bibitem[\protect\citeauthoryear{Smith}{2014}]{smith2014}
+Smith A.~B., 2014, The Example Journal, 12, 345 (Paper I)
+\end{thebibliography}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
