@@ -139,6 +139,8 @@ An overview of the SDSS MaNGA project is provided by \citet{Bundy_2014}. A conci
 
 Reverberation mapping of active galactic nuclei is discussed in \citet{2017ApJ...840...97F}.
 
+Vivienne has written a piece on post-starburst galaxies. This is covered in Section \ref{sec:PSB_gals}.
+
 We have now setup synchronising with GitHub and are testing to see that this works OK.
 
 \section{Methods, Observations, Simulations etc.}
@@ -272,7 +274,8 @@ A lot of stars are included in the catalogue by \citet{hog2000tycho}.
     \label{fig:CMD1_figure}
 \end{figure}
 
-\section{Post-starburst Galaxies (PSB)}
+\section{Post-starburst (PSB) Galaxies}
+\label{sec:PSB_gals}
 Vivienne has been involved in the preparation of a paper \citep{2017MNRAS.472.1401A} regarding the relationship between quenching of star formation and morphological transition.
 
 \section{Further work}
